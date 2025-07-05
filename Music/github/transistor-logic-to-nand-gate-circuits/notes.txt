@@ -1,0 +1,27 @@
+Project Description:
+
+This project explores digital logic design starting from the transistor level. The first phase involves building individual logic gates (AND, OR, NOT) using discrete transistors. The second phase focuses on using only NAND gates to replicate all logic operations and construct more advanced circuits.
+
+Key Concepts:
+- Transistor as a switch in digital logic
+- Universal nature of NAND gates
+- Digital circuit minimization and logic verification
+
+ Procedures
+The project was divided into multiple phases. In the first part, a NAND gate was built manually using discrete CMOS transistors on a breadboard. Specifically, two N-Channel (2N7000) and two P-Channel (BS250P) MOSFETs were used. Datasheets were consulted to correctly identify the pinouts.
+
+The breadboard setup was guided by a standard breadboard layout diagram. Careful placement of PMOS and NMOS transistors allowed for the construction of a functional NAND gate. This helped in understanding how logic gates can be created from basic electronic components.
+
+In the second part, a CD4093BE NAND gate IC was used to implement a logic function using only NAND gates:
+
+𝑓(𝐴,𝐵,𝐶)=𝐴⋅𝐶+𝐵‾⋅𝐶
+f(A,B,C)=A⋅C+B.C 
+
+This function was first expressed entirely using NAND gates, then wired on a breadboard using the IC. Proper power connections (+5V and GND) were established based on the datasheet, and internal NAND gates were interconnected to build the complete logic circuit.
+
+🧪 Testing
+For testing, the outputs of the discrete transistor NAND gate and the IC-based logic circuit were verified using a probe. Logic switches for inputs A, B, and C were toggled systematically, and the output was checked for each combination.
+
+Students were advised to create a truth table for each circuit to manually verify the expected outputs. Special care was taken to avoid connecting multiple outputs together—this could cause damage due to conflicting logic levels.
+
+The final output was observed and compared against the expected result of the logic function. Observations confirmed that the NAND gate circuit worked as intended and validated the universality of NAND logic in digital circuit design.
